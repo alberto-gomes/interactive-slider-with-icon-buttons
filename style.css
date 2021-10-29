@@ -1,0 +1,210 @@
+/* Basic style for Slider */
+.slider{
+	padding-top: 320px; 
+}
+ 
+/* Style for Image*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+	top: -20px;
+}
+ 
+.slider input[name='slide_switch'] {
+	display: none;
+}
+ 
+.slider label {
+	margin: 50px 0 0 18px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+	width: 80px;
+	padding: 10px;
+}
+ 
+.slider input[name='slide_switch']:checked+label {
+	box-shadow: 0 5px 19px 0 rgb(0 0 0 / 30%);
+	padding: 10px;
+	border-top: solid 2px red;
+	opacity: 1;
+}
+
+/* Main images */
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+ 
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Button Abrir Cuenta Demo */
+
+.slider input[name='slide_switch'] ~ a {
+	display: none;
+}
+
+.slider input[name='slide_switch']:checked ~ a {
+	display: block;
+}
+
+.slider input[name='slide_switch']+ label[for=id2] ~ a {
+	display: none;
+}
+
+.slider input[name='slide_switch']:checked+label[for=id2] ~ a {
+	display: block;
+}
+
+.slider input[name='slide_switch']+ label[for=id3] ~ a {
+	display: none!important;
+}
+
+.slider input[name='slide_switch']:checked+label[for='id3'] ~ a.third {
+	display: block!important;
+}
+
+.slider input[name='slide_switch']:checked+label[for=four] ~ a {
+	display: block!important;
+}
+
+.slider input[name='slide_switch']+label[for=four] ~ a {
+	display: none!important;
+}
+
+.btn {
+	transition: all 0.7s;
+}
+
+.btn:hover {
+	color:white!important;
+	background-color: red!important;
+	transition: all 0.7s;
+}
+
+/* Another Buttons */
+
+.btn2 {
+	transition: all 0.7s;
+}
+
+.btn2:hover {
+	opacity: 0.5;
+	transition: all 0.7s;
+}
+
+.btn3 {
+	transition: all 0.7s;
+}
+
+.btn3:hover {
+	opacity: 0.5;
+	transition: all 0.7s;
+}
+
+/* Responsive to mobile */
+
+@media only screen and (max-width: 650px) {
+	h1 {
+		font-size: 23px!important;
+	}
+	h2 {
+		font-size: 23px!important;
+	}
+
+.slider input[name='slide_switch']+label[for=id1] ~ a.btn.first {
+	top: 10px!important;
+}
+
+.slider{
+	padding-top: 220px;		
+	}
+	
+.btn {
+		top: 220px!important;
+		right: 0!important;
+		width: 100%;
+	}
+	
+.btn:hover {
+	background-color: transparent!important;
+	color: red!important;
+	opacity: 0.5;
+	}
+	
+	.slider label {
+	margin: 50px 0 0 18px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+	width: 80px;
+	padding: 10px;
+	}
+	
+	.slider input[name='slide_switch']+label {
+		width: 35%!important;
+	}
+	
+	.slider input[name='slide_switch']:checked+label {
+box-shadow: 0 5px 19px 0 rgb(0 0 0 / 30%);
+	padding: 10px;
+	border-top: solid 2px red;
+	opacity: 1;
+	margin-top: 50px;
+}
+	
+	.slider input[name='slide_switch']+ label[for=id1] {
+	margin-bottom: 0px!important;
+	margin-top: 50px;
+}
+
+	.slider input[name='slide_switch']:checked+label[for=id1] {
+	margin-bottom: 0px!important;
+	margin-top: 40px;
+}
+
+.btn2 {
+		text-align:center!important;
+	}
+	
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+	top: -20px;
+	max-width: 100%!important;
+}
+
+.deposito {
+		font-size: 12px!important;
+		padding: 0!important;
+		margin-right: 1px;
+		margin-left: 1px;
+	}
+
+.tab-description{
+		font-size: 8px!important;
+	}
+	
+	.deposito2{
+		font-size: 12px!important;
+		padding: 0!important;
+		margin-right: 1px;
+		margin-left: 1px;
+		padding-bottom: 13px!important;
+	}
+
+	.deposito1{
+		font-size: 12px!important;
+		padding: 0!important;
+		margin-right: 1px;
+		margin-left: 1px;
+				padding-bottom: 13px!important;
+	}
+}
